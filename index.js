@@ -29,11 +29,7 @@ const Calculator = {
 }
 
 function actionApplyer(starting, functions) {
-  // console.log(functions);
-  if (!functions.length == 0) {
     return functions.reduce( (total, element) =>{
       return element(total)
     },starting)
-  }
-  return starting
 }
