@@ -20,11 +20,12 @@ const Calculator = {
     divide: (num1, num2) => num1 / num2,
 }
 
-function actionApplyer (int, arr) {
-   if (arr = []){
-       return 0;
-   }else{
-    return 4
-   }
-}
-
+let actionApplyer = function(start, arr) {
+    let a = start
+  
+    for (let i = 0; i < arr.length; i++ ){
+      a = arr[i](a)
+    }
+  
+    return a
+  }
